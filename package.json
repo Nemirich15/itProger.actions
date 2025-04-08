@@ -8,7 +8,6 @@
     "@wdio/mocha-framework": "^9.12.3",
     "@wdio/spec-reporter": "^9.12.3"
   },
-
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run ./wdio.conf.js"

@@ -1,0 +1,12 @@
+name: Main Page Deploy
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+    - name: Test application
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Run Test
+      run: npm run wdio ./wdio test/specs/itProger.page.js
