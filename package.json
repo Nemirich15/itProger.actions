@@ -1,5 +1,5 @@
 {
-  "name": "itProger",
+  "name": "itproger",
   "type": "module",
   "devDependencies": {
     "@wdio/cli": "^9.12.4",
