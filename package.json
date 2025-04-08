@@ -1,0 +1,16 @@
+{
+  "name": "itProger",
+  "type": "module",
+  "devDependencies": {
+    "@wdio/cli": "^9.12.4",
+    "@wdio/junit-reporter": "^9.12.3",
+    "@wdio/local-runner": "^9.12.4",
+    "@wdio/mocha-framework": "^9.12.3",
+    "@wdio/spec-reporter": "^9.12.3"
+  },
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "wdio": "wdio run ./wdio.conf.js"
+  }
+}
