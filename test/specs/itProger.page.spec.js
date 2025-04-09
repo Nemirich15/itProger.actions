@@ -21,4 +21,9 @@ describe('Main page', () => {
         itProgerPage.contactsClick();
         await browser.pause(3000);
     });
+
+    it('Enter form', async() => {
+        itProgerPage.enterClick();
+        await browser.pause(3000);
+    });
 });

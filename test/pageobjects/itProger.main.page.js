@@ -5,6 +5,7 @@ class itProger extends Page {
     get itprogerLink() {return $('//*[@id="logo"]/a/span')};
     get directories() {return $('//*[@id="about"]/a[1]')};
     get contacts() {return $('//*[@id="about"]/a[2]/font/font')};
+    get enter() {return $('//*[@id="reg_auth"]/a[1]')};
 
     open() {
         super.open('https://itproger.com');
@@ -22,6 +23,10 @@ class itProger extends Page {
 
     contactsClick() {
         this.contacts.click()
+    };
+
+    enterClick() {
+        this.enter.click()
     };
 
 };
