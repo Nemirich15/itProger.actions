@@ -12,6 +12,7 @@ jobs:
       run: npm run wdio ./wdio test/specs/itProger.page.js
   lint:
     runs-on: windows-latest
+    needs: test
     steps:
     - name: Lint aplication
       uses: actions/checkout@v4
