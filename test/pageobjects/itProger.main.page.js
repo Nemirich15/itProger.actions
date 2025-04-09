@@ -7,6 +7,9 @@ class itProger extends Page {
     get contacts() {return $('//*[@id="about"]/a[2]/font/font')};
     get enter() {return $('//*[@id="reg_auth"]/a[1]')};
 
+    get enterFormOne() {return $('//*[@id="email"]')};
+    get enterFormTwo() {return $('//*[@id="password"]')};
+
     open() {
         super.open('https://itproger.com');
         browser.pause(3000);
@@ -28,6 +31,14 @@ class itProger extends Page {
     enterClick() {
         this.enter.click()
     };
+
+    enterFormOneClick() {
+        this.enterFormOne.setValue('nemirka15@gmail.com');
+    };
+
+    enterFormTwoClick() {
+        this.enterFormTwo.setValue('15nemira15');
+    }
 
 };
 

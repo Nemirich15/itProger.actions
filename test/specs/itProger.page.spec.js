@@ -26,4 +26,14 @@ describe('Main page', () => {
         itProgerPage.enterClick();
         await browser.pause(3000);
     });
+
+    it('set e-mail', async() => {
+        itProgerPage.enterFormOneClick();
+        await browser.pause(3000);
+    });
+
+    it('set password', async() => {
+        itProgerPage.enterFormTwoClick();
+        await browser.pause(3000);
+    });
 });
