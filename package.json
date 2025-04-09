@@ -14,9 +14,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run ./wdio.conf.js",
     "eslint": "npx eslint.config.js",
-    "build": "build ."
+    "build": "npx build ."
   },
   "dependencies": {
+    "eslint": "^9.24.0",
     "build": "^0.1.4"
   }
 }
