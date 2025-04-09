@@ -1,4 +1,4 @@
-import Page from "./main.page";
+import Page from "./page";
 
 class itProger extends Page {
 

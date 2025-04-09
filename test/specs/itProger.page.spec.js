@@ -1,4 +1,4 @@
-import itProgerPage from "../pageobjects/itProger.page";
+import itProgerPage from "../pageobjects/itProger.main.page";
 
 describe('Main page', () => {
 

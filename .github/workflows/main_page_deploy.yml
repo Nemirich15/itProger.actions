@@ -10,3 +10,12 @@ jobs:
       run: npm ci
     - name: Run Test
       run: npm run wdio ./wdio test/specs/itProger.page.js
+  lint:
+    runs-on: windows-latest
+    steps:
+    - name: Lint aplication
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: Run Lint
+      run: npx eslint
