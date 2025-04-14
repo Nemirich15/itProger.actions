@@ -1,5 +1,5 @@
 name: Main Page Deploy
-run: workflow_dispatch
+on: workflow_dispatch
 jobs:
   test:
     runs-on: windows-latest
