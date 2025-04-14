@@ -1,32 +1,35 @@
 name: Main Page Deploy
-on: workflow_dispatch
+run: workflow_dispatch
 jobs:
   test:
     runs-on: windows-latest
     steps:
-    - name: Test application
+    - name: Test aplication
       uses: actions/checkout@v4
     - name: Install dependecies
       run: npm ci
-    - name: Run Test
-      run: npm run wdio ./wdio test/specs/itProger.page.js
+    - name: Run test
+      run: npm run wdio ./wdio.conf.js
   lint:
     runs-on: windows-latest
+    needs: test
     steps:
     - name: Lint aplication
       uses: actions/checkout@v4
     - name: Install dependecies
       run: npm ci
-    - name: Run Lint
+    - name: Run lint
       run: npm run wdio ./lint .
   build:
     runs-on: windows-latest
+    needs: lint
     steps:
     - name: Build aplication
       uses: actions/checkout@v4
     - name: Install dependecies
       run: npm ci
-    - name: Run Build
-      run: npm run wdio /build .
+    - name: Run build
+      run: npm run wdio ./build .
     - name: Deploy aplication
       run: echo "Deploying..."
+

@@ -36,4 +36,20 @@ describe('Main page', () => {
         itProgerPage.enterFormTwoClick();
         await browser.pause(3000);
     });
+
+    it('to registraration page', async() => {
+        itProgerPage.registrationClick();
+        await browser.pause(3000);
+    });
+
+    it('serch foarm', async() => {
+        itProgerPage.serchClick();
+        await browser.pause(3000);
+    });
+
+    it('change languige', async() => {
+        itProgerPage.changeLanguigeClick();
+        await browser.pause(3000);
+    });
+
 });
