@@ -52,4 +52,24 @@ describe('Main page', () => {
         await browser.pause(3000);
     });
 
+    it('it column page', async() => {
+        itProgerPage.itColumnClick();
+        await browser.pause(3000);
+    });
+
+    it('video courses', async() => {
+        itProgerPage.videoCoursesClick();
+        await browser.pause(3000);
+    });
+
+    it('test and practice', async() => {
+        itProgerPage.testsAndpracticesClick();
+        await browser.pause(3000);
+    });
+
+    it('program lerning', async() => {
+        itProgerPage.programsLerningClick();
+        await browser.pause(3000);
+    });
+
 });

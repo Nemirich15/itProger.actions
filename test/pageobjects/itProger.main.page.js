@@ -14,6 +14,12 @@ class itProger extends Page {
     get serch() {return $('//*[@id="search"]/div')};
     get changeLanguige() {return $('//*[@id="search"]/noindex/a/i')};
 
+    get itColumn() {return $('//*[@id="hideMenu"]/a[2]')};
+    get videoCourses() {return $('//*[@id="hideMenu"]/a[3]')};
+    get testsAndpractices() {return $('//*[@id="hideMenu"]/a[4]')};
+    get programsLerning() {return $('//*[@id="hideMenu"]/a[5]')};
+
+
     open() {
         super.open('https://itproger.com');
         browser.pause(3000);
@@ -55,6 +61,22 @@ class itProger extends Page {
 
     changeLanguigeClick() {
         this.changeLanguige.click();
+    };
+
+    itColumnClick() {
+        this.changeLanguige.click();
+    };
+
+    videoCoursesClick() {
+        this.videoCourses.click();
+    };
+
+    testsAndpracticesClick() {
+        this.testsAndpractices.click();
+    };
+
+    programsLerningClick() {
+        this.programsLerning.click();
     };
 
 
