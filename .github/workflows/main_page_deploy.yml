@@ -18,7 +18,7 @@ jobs:
     - name: Install dependecies
       run: npm ci
     - name: Run Lint
-      run: npx eslint
+      run: npm run wdio ./lint .
   build:
     runs-on: windows-latest
     steps:
