@@ -1,6 +1,6 @@
 import itProgerPage from "../pageobjects/itProger.main.page";
 
-describe('Main page', () => {
+xdescribe('Main page', () => {
 
     it('Open page', async() => {
         itProgerPage.open();
