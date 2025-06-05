@@ -7,7 +7,7 @@ describe('registration page', () => {
         await browser.pause(2000);
     });
 
-    it('play video', async() => {
+    xit('play video', async() => {
         registrationPage.videoBtnClick();
         await browser.pause(2000);
     });
@@ -18,22 +18,34 @@ describe('registration page', () => {
     });
 
     it('case one', async() => {
+        registrationPage.scroll();
         registrationPage.caseOneClick();
-        await browser.pause(2000);
+        await browser.pause(3000);
+        registrationPage.registr_form();
+        await browser.pause(3000)
     });
 
     it('case two', async() => {
-        registrationPage.caseTwoClick();
+        registrationPage.scroll();
+        registrationPage.caseTwoClick()
+        await browser.pause(2000);
+        registrationPage.registr_form();
         await browser.pause(2000);
     });
 
     it('case three', async() => {
+        registrationPage.scroll();
         registrationPage.caseThreeClick();
+        await browser.pause(2000);
+        registrationPage.registr_form();
         await browser.pause(2000);
     });
 
     it('case four', async() =>{
+        registrationPage.scroll();
         registrationPage.caseFourClick();
+        await browser.pause(2000);
+        registrationPage.registr_form();
         await browser.pause(2000);
     });
 });

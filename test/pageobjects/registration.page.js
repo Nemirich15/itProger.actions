@@ -10,8 +10,21 @@ class Registration extends Page {
     get caseThree() {return $('//*[@id="tarrifs"]/div[3]/div/div[16]/div[4]/div/div')};
     get caseFour() {return $('//*[@id="tarrifs"]/div[3]/div/div[16]/div[5]/div/div')};
 
+    get reg_email() {return $('//*[@id="user_email"]')};
+    get reg_email_repeat() {return $('//*[@id="user_email_2"]')};
+
+
     open() {
         super.open('https://itproger.com/reg');
+    }
+
+    
+
+    scroll() {
+        this.caseOne.scrollIntoView({
+            behavior: 'smooth',
+            block: 'center'
+        });
     }
 
     videoBtnClick() {
@@ -22,21 +35,30 @@ class Registration extends Page {
         this.choiseMouney.click()
     };
 
+    registr_form() {
+        this.reg_email.setValue('nemirka15@gmail.com')
+        browser.pause(2000);
+        this.reg_email_repeat.setValue('namirka15@gmail.com');
+        browser.pause(2000); 
+    };
+
     caseOneClick() {
         this.caseOne.click()
+        browser.pause(2000)
     };
 
     caseTwoClick() {
-        this.caseTwo.click()
+        this.caseTwo.click();
     };
 
     caseThreeClick() {
-        this.caseThree.click()
+        this.caseThree.click();
     };
 
     caseFourClick() {
-        this.caseFour.click()
+        this.caseFour.click();
     };
-};
+
+}
 
 export default new Registration();
