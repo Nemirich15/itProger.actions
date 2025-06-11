@@ -7,7 +7,7 @@ jobs:
     - name: Test application
       uses: actions/checkout@v4
     - name: install dependecies
-      run: mpm ci
+      run: npm ci
     - name: run test
       run: npm run wdio ./wdio test/specs/../.js
   lint:
