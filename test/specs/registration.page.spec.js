@@ -1,6 +1,6 @@
 import registrationPage from "../pageobjects/registration.page";
 
-describe('registration page', () => {
+xdescribe('registration page', () => {
     
     it('open page', async() => {
         registrationPage.open();

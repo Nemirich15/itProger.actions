@@ -1,7 +1,7 @@
 export default class Page {
 
     constructor(){
-        this.title= 'My Page'
+        this.title= 'Name of Page'
     }
 
     async open(path){
