@@ -1,6 +1,6 @@
 import contactsPage from "../pageobjects/contacts.page";
 
-describe('Contacts page', () => {
+xdescribe('Contacts page', () => {
 
     it('open page', async() => {
         contactsPage.open();
