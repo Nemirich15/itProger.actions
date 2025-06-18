@@ -31,5 +31,5 @@ jobs:
     - name: run application
       run: npm run wdio ./build .
     - name: deploy aplications
-      run: acho:"Deploying..."
+      run: echo:"Deploying..."
 
