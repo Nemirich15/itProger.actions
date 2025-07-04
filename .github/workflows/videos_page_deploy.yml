@@ -1,4 +1,4 @@
-name: Vudeos page deploy
+name: Videos page deploy
 on: workflow_dispatch
 jobs:
   test:
@@ -9,7 +9,7 @@ jobs:
     - name: Install dependecies
       run: npm ci
     - name: run test
-      run: npm run wdio. /wdio test/specs/..js
+      run: npm run wdio ./wdio test/specs/.js
   lint:
     runs-on: windows-latest
     needs: test
