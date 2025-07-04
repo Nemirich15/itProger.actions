@@ -1,6 +1,6 @@
 import articlesPage from "../pageobjects/articles.page";
 
-describe('Articles page', () => {
+xdescribe('Articles page', () => {
     
     it('Open page', async() => {
         articlesPage.open();

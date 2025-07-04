@@ -4,8 +4,8 @@ export default class Page {
         this.title= 'Name of Page'
     }
 
-    async open(path){
-        await browser.url(path)
+    open(path){
+        browser.url(path)
     }
 
 };

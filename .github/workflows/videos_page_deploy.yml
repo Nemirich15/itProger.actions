@@ -1,0 +1,35 @@
+name: Vudeos page deploy
+on: workflow_dispatch
+jobs:
+  test:
+    runs-on: windows-latest
+    steps:
+    - name: Test application
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: run test
+      run: npm run wdio. /wdio test/specs/..js
+  lint:
+    runs-on: windows-latest
+    needs: test
+    steps:
+    - name: Lint application
+      uses: actions/checkout@v4
+    - name: Install dependecies
+      run: npm ci
+    - name: run lint
+      run: npm run wdio ./lint .
+  build:
+    runs-on: windows-latest
+    needs: lint
+    steps:
+    - name: Build application
+      uses: actions/checkout@v4
+    - name: install dependecies
+      run: npm ci
+    - name: run build
+      run: npm run wdio ./build .
+    - name: deploy application
+      run: echo "deploying..."
+
