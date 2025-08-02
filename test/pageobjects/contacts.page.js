@@ -25,3 +25,4 @@ class Contacts extends Page {
 };
 
 export default new Contacts();
+

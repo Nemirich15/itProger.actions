@@ -22,3 +22,4 @@ xdescribe('Contacts page', () => {
         await browser.pause(3000);
     });
 });
+
